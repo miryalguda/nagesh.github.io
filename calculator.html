@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculator(number1, operator, number2){
+
+            switch (operator) {
+                case "+":
+                    return (number1 + number2);
+                break;
+
+                case "-":
+                    return (number1 - number2);
+
+                break;
+
+                case "*":
+                    return (number1 * number2);
+                break;
+
+                case "/":
+                    return (number1 / number2);
+                break;
+
+                case "/":
+                    return (number1 / number2);
+                break;
+
+                default: 
+
+                    return("no calculation");
+
+            }
+        }
+
+        console.log(calculator(1, "+", 1));
+        console.log(calculator(3, "-", 2));
+        console.log(calculator(3, "*", 2));
+        console.log(calculator(30, "/", 2));
+        console.log(calculator(5, "/", 0));
+
+
+    </script>
+</body>
+</html>

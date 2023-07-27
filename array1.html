@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const arr = [10, 12, 14, 16];
+
+function incrementByOne(arr) {
+            
+    for (let i = 0; i < arr.length; i++){
+      arr[i] = arr[i]+ 2;
+    }
+      return arr;
+}
+
+    console.log (incrementByOne(arr));
+
+
+</script>
+<script>
+
+function addItemToArray(arr, item, item1) {
+  // add the parameter item to the end of the array arr
+  arr.push(item, item1);
+  // return the array
+  return arr;
+}
+  console.log(addItemToArray(arr, 10, 20));
+
+</script>
+
+<script>
+
+function addItemToFront(arr, item) {
+  // add the parameter item to the front of the array arr
+  arr.unshift(item);
+  // return the array
+  return arr;
+}
+  console.log(addItemToFront(arr, 10))
+
+</script>
+
+
+</body>
+</html>
