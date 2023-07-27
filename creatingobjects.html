@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //creating a new object
+    const myArray = [];
+
+    const person = function person(x, y){
+        let p = { x : x, y:y}
+        return p;
+    }
+
+    let p = person (3, 4);
+    myArray.push(p);
+    console.log (JSON.stringify(myArray));
+
+
+   </script>
+   <script>
+    //Creating multiple objects 
+    const myArray1 =[];
+
+    const person1 = function person1(x1, y1){
+        let p1 = {x1 : x1, y1:y1}
+        return p1
+    }
+
+    const factory = function factory (n) {
+        for (i =0; i <n; i++){
+            let p1 = person1 (i, i);
+            myArray1.push (p1)
+        }
+    }
+    factory (4);
+
+    console.log (JSON.stringify(myArray1))
+
+
+   </script> 
+</body>
+</html>
