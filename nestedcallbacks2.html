@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+h2 {
+    text-align: center;
+   
+    margin: center;
+    color: blue;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+h3 {
+    text-align: center;
+    margin: center;
+    color: rgb(78, 8, 51);
+    font-family:Cambria;
+    background-color: rgb(227, 245, 239); 
+}
+
+</style>
+
+</head>
+<body>
+   <h1> Do you want to know US population?</h1>
+  
+    <button id = "button" onclick = "myFunction()">CLICK ME</button><br></br>   
+
+<h2 id = "demo"></h2>
+<h3 id = "demo1"></h3>
+<h3 id = "demo2"></h3>
+<h3 id = "demo3"></h3>
+<h3 id = "demo4"></h3>
+<h3 id = "demo5"></h3>
+<script>
+
+function myFunction() {
+  
+    function myFunction1(){(something1); };  
+        function myFunction1(value1) {document.getElementById ("demo1").innerHTML = value1;};
+
+            function myFunction2(){(something2);};
+                function myFunction2(value2) {document.getElementById ("demo2").innerHTML = value2;};
+
+                    setTimeout (function(something3){ myFunction3("TOTAL: 331.9 Millions in 2021")}, 9000);
+                        function myFunction3(value3) {document.getElementById ("demo3").innerHTML = value3;};
+
+                            setTimeout (function(something4){ myFunction4("TOTAL: 338.3 Millions in 2022")}, 6000);
+                                function myFunction4(value4) {document.getElementById ("demo4").innerHTML = value4;};
+
+                                    setTimeout (function(something5){ myFunction5("TOTAL: 340 Millions in mid 2023")}, 3000);
+                                         function myFunction5(value5) {document.getElementById ("demo5").innerHTML = value5;};
+
+                                    myFunction5 ("in mid 2023") 
+
+                            myFunction4 ("in 2022")
+
+                    myFunction3 ("in 2021");
+
+            myFunction2(" GENTS: 162.4 Millions in 2020");
+
+    myFunction1(" LADIES : 167.5 Millions in 2020");
+
+document.getElementById ("demo").innerHTML = "TOTAL: 329.9 Millions in 2020";
+           
+}
+
+</script>
+   
+</body>
+</html>
