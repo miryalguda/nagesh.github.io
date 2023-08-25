@@ -1,0 +1,47 @@
+
+//addition
+
+
+addition("of all numbers", () => {
+
+const num1 = value;
+const num2 = value;
+
+addUp ( num1 and num2) and give total value;
+}
+display the total.  
+
+
+//subtraction
+
+subtract("both numbers", () => {
+
+const num1 = value;
+const num2 = value;
+
+subtract ( num2 from num1) and give final value;
+}
+display the result.  
+
+//multiplication
+
+multiply("both numbers", () => {
+
+const num1 = value;
+const num2 = value;
+
+multiply ( num1 with num2) and give final product;
+}
+display the product.
+
+//division
+
+
+divide("num1 by num2", () => {
+
+const num1 = value;
+const num2 = value;
+
+divide ( num1 by num2) and give final quotient;
+}
+display the quotient value.  .  
