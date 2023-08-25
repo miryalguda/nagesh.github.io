@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const add =  (a, b) => {
+            return `addition =  ${a + b}`;
+           
+        };
+        console.log (add(6, 2));
+//-------------------------------------------------------------------------------
+
+        const add1 =  (5, 9, () => {
+        
+          return `addition =   ${5 + 9}`;
+       
+        });
+        console.log (add1());
+//----------------------------------------------------------------------------------
+        const  add3  = (m, n) => {
+
+        var  m = 7;
+        var n = 5;
+        result =  "addition = " + (m + n);
+        return result;      
+        }
+
+        console.log(add3());
+//-------------------------------------------------------------------------------------
+
+    var  x = subtract (10, 5);
+    function subtract(a,b) {
+         
+        return "subtract = " + (a - b);
+        
+    };
+    
+    console.log (x);
+//------------------------------------------------------------------------------------
+    function multiply(a,b) {
+        result = "multiply = " + ( a * b);
+        console.log (result);
+    }
+  
+    function divide(a,b) {
+        result = "divide = " + (a / b);
+        console.log (result);
+    }    
+
+
+    
+    multiply (4, 5);
+    divide(10, 2)
+//---------------------------------------------------------------------------------------
+
+</script>
+
+
+</body>
+</html>
