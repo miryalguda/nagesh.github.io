@@ -1,0 +1,34 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+const greet = (name) => {
+   
+   
+    if (name === null || name === undefined) return 'Hello there!';
+    if (typeof name === typeof []) {
+      if (name.length > 0) {
+        let names = '';
+        name.forEach((elm) => {
+          names += ', ' + elm;
+        });
+        return 'Hello' + names;
+      }
+      return 'Hello there!';
+    }
+    if (name === name.toUpperCase()) {
+      return 'HELLO ' + name + '!';
+    }
+  
+    return 'Hello, ' + name;
+  }
+
+console.log(greet(['jose', 'pep', 'bbb']));
+
+    </script>
+ </body>
+ </html>
