@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating grid</title>
+
+    <style>
+
+body {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(3, auto);
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 2px solid red;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+for (let i = 0; i < 20; i++) {
+  let div = document.createElement('div')
+  document.body.appendChild(div)
+  div.textContent = i
+}
+
+    </script>
+</body>
+</html>

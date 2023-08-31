@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic  styles</title>
+
+    <style>
+        .on {
+            background: orange;
+        }
+
+        div {
+            padding: 50px;
+            text-align: center;
+            border-style: solid;
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+<body>
+<button onclick= "toggle()">toggle</button>
+<button onclick = "start()">start</button>
+<button onclick="stop()">stop</button>
+
+<div id= "target">target</div>
+
+<script>
+    function toggle() {
+        const element = document.getElementById('target');
+        element.classList.toggle('on');
+    }
+        let timer = null;
+    function start(){
+            timer = setTimeout ( () => {
+                toggle();
+                console.log("Hello from timer!");
+                start();
+            }, 1000);
+    }
+    
+    function stop() {
+        clearTimeout(timer);
+    }
+
+    </script> 
+</body>
+</html>
