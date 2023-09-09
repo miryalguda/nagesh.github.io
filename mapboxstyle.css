@@ -1,0 +1,30 @@
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+  }
+  
+  .map-overlay {
+    position: absolute;
+    left: 0;
+    padding: 40px;
+  }
+
+  .button {
+    background-color: #f44336;
+    color: white;
+   margin: 10px 600px;
+  
+  }
+
+  #menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    }
